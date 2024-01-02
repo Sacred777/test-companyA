@@ -1,0 +1,25 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 70px 30px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 32px;
+}
+
+.grid--position-one-card {
+  padding-top: 85px;
+  grid-template-columns: minmax(380px, 1fr);
+  row-gap: 67px;
+}
+
+@media screen and (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .grid--position-one-card {
+    padding-top: 0;
+  }
+}
